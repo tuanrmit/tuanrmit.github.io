@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Account Registration</title>
+    </head>
+    <body>
+        <h1>Create a new account</h1>
+        <form action="registration.html" method="POST">
+            <p>
+                <input type="text" name="firstname" placeholder="First name">
+                <input type="text" name="lastname" placeholder="Last name">
+            </p>
+            <p>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </p>
+            <p>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male">He/Him
+                <input type="radio" name="gender" value="female">She/Her
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password"> 
+            </p>
+            
+            <p>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </body>
+</html>
