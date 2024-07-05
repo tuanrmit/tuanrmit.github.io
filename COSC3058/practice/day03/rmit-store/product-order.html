@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Order</title>
+        <link rel="icon" type="image/png" href="assets/images/rmit-favicon.png">
+        <style>
+            table {
+                text-align: center;
+                margin: auto;
+                width: 70%;
+            }
+            body {
+                text-align: center;
+                margin: auto;
+            }
+            fieldset {
+                text-align: center;
+                width: 50%;
+                margin: auto;
+            }
+            legend {
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="assets/images/rmit-store-logo.png" width=300 alt="RMIT store logo">
+        </header>
+        <!-- Nav: Page Menu and links-->
+        <nav>
+            <h2>
+                <a href="#">Clothing</a>
+                <a href="#">Accessories</a>
+                <a href="#">Stationery</a>
+                <a href="#">Course</a>
+                <a href="#">Special-Collection</a>
+                <a href="#">Sales</a>
+                <a href="#">Buy now!</a>
+            </h2>
+        </nav>
+        <!-- slider -->
+        <figure>
+            <img src="assets/images/slider.jpg" width=70% alt="RMIT slider">
+        </figure>
+        <!-- Order Products Form-->
+        <form action="thankyou.html" method="POST">
+            <fieldset>
+                <legend>Enter your personal information</legend>
+                <p>
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" id="firstname" name="firstname">
+                </p>
+                <p>
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" name="lastname">
+                </p>
+                <p>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Enter your shipping information</legend>
+                <p>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </p>
+                <p>
+                    <label for="district">District:</label>
+                    <select id="district" name="district">
+                        <option value="">--Please choose an option--</option>
+                        <option value="1">District 1</option>
+                        <option value="2">District 2</option>
+                        <option value="3">District 3</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <option value="">--Please choose a city--</option>
+                        <option value="hcm">Ho Chi Minh</option>
+                        <option value="hn">Ha Noi</option>
+                        <option value="dn">Da Nang</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                
+                    <legend>Shopping Cart</legend>
+                    <p>
+                        <label for="cart">Select products:</label>
+                        <br>
+                        <select id="cart" name="cart" multiple>
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                            <option>Product 2</option>
+                        </select>
+                    </p>
+                    <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
+            </fieldset>
+            <p><input type="submit" value="Order Now!"></p>
+            <!-- Footer: Copyright --> 
+          <footer>
+            <p>&copy; 2024 by RMIT Vietnam</p>
+          </footer>
+        </form> 
+    </body>
+</html>
