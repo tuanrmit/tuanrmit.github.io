@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- To ensure web page is propely rendering and touch zooming-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+        <title>Template</title>
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <!-- Navbar with links to main points of today lecture-->
+            <header class="container">
+                <nav class="d-flex flex-wrap justify-content-center border-bottom mb-4 py-3 ">
+                    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none link-body-emphasis">
+                        <span class="fs-3">COSC3060 - Web Programming Studio</span>
+                    </a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#courseSchedule" class="nav-link">Schedule</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Assignments</a></li>
+                        <li class="nav-item"><a href="#learnBootstrap" class="nav-link active">Bootstrap</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Teams</a></li>
+                    </ul> 
+                </nav>
+            </header>
+
+            <!-- Slider to 4 main activities to day: this course and main content, assignments, bootstrap, team formation-->
+            <section class="container">
+                <div id="carouselExampleIndicators" class="carousel slide"> <!-- add data-bs-ride="carousel for auto sliding"-->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/schedule.png" class="d-block w-100" alt="course schedule">
+                        <!-- <svg class="bd-placeholder-img" width="100%" height="100%">
+                            <rect width="100%" height="100%"  fill="var(--bs-secondary-color)"></rect>
+                        </svg> -->
+                        <div class="carousel-caption">
+                                <!-- <h1>Course schedule</h1>
+                                <p>8-week schedule</p> -->
+                                <a class="btn btn-lg btn-primary" href="#courseSchedule">Learn more</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/assignments.png" class="d-block w-100" alt="course assignments">
+                        <div class="carousel-caption">
+                            <a class="btn btn-lg btn-primary href="#">Learn more</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                         <img src="assets/learnbootstrap.png" class="d-block w-100" alt="learn bootstrap">
+                         <div class="carousel-caption">
+                            <a class="btn btn-lg btn-primary href="#">Learn more</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/teams.png" class="d-block w-100" alt="team formation">
+                        <div class="carousel-caption">
+                           <a class="btn btn-lg btn-primary href="#">Learn more</a>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+            </section>
+
+            <!-- About this course: syllabus and assignment -->
+            <section id="courseSchedule" class="container mt-5">
+                <h1 class="display-7 bg-primary text-white text-center py-1">Course schedule</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th><th scope="col">Monday</th><th scope="col">Wednesday</th><th scope="col">Friday</th><th scope="col">Assignment deadline</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <th scope="row">Week 1</th>
+                            <td>Bootstrap CSS Framework</td>
+                            <td>Innovation</td>
+                            <td>Linux Environment and Command lines</td>
+                            <td>Studio Portfolio 1 (1%) (A0)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 2</th>
+                            <td>NodeJS Introduction</td>
+                            <td>Group, Git & Github</td>
+                            <td>Express Framework and EJS (Embedded Javascript) template engine </td>
+                            <td>Studio Portfolio 2 (1%) (A0)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 3</th>
+                            <td>NodeJS & MongoDB database</td>
+                            <td>Digital Accessibility & Design 1</td>
+                            <td>MongoDB Schema Design</td>
+                            <td>Studio Portfolio 3 (1%) (A0) <br> Design Document (10%) (A1)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 4</th>
+                            <td>Sessions, Cookies, and Authentication</td>
+                            <td>Digital Accessibility & Design 2</td>
+                            <td>Web Hosting & Deployment</td>
+                            <td>Studio Portfolio 4 (1%) (A0)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 5</th>
+                            <td>File Upload Using Multer Package</td>
+                            <td>Final Project Consultation 1</td>
+                            <td>Javascript and HTML5 APIs</td>
+                            <td>Studio Portfolio 5 (1%) (A0)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 6</th>
+                            <td>Google Authentication</td>
+                            <td>Final Project Consultation 2 <br>User Testing Survey</td>
+                            <td>NodeJS Coding Standards and Security</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 7</th>
+                            <td>Final Project Consultation 3</td>
+                            <td>Final product (30%) (A2) <br>Group presentation (15%) (A3)</td>
+                            <td>Fullstack materials review</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Week 8</th>
+                            <td>Fullstack in-class Lab Test (40%) (A4)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <tbody>
+
+                    </tbody>    
+                </table>
+            </section>
+            <!-- bootstrap: what is it? Common components: grid, nav, header, footer, card -->
+            <section id="learnBootstrap" class="container mt-5">
+                <h1 class="display-7 bg-primary text-white text-center ">Bootstrap</h1>
+                    <p class="text-center my-5 display-6">A set of pre-built classes with profound CSS rules and JS to decorate and add functions to web pages  </p>
+                    <div class="container my-3">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/gear.png" alt="setup bootstrap" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Setup Bootstrap</h4>
+                                        <div class="timeline-body">
+                                            <p class="text-muted">To start, we just need to include the Bootstrap CSS and JS files just as we write link tag to include CSS files and script tag to include javascript files!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/gridlayout.png" alt="Bootstrap container and grid layout system" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Bootstrap container and grid layout</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            <h5>Container</h5>
+                                            .container<br>
+                                            .container-{breakpoint} with breakpoint of sm (small), md (medium), lg (large), xl (extra large), xxl<br>
+                                            .container-fluid<br>
+                                            <h5>Grid layout</h5>
+                                            .each row is 12-column width
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/spacing.png" alt="Bootstrap spacing" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Bootstrap spacing</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Just like margin and padding spaces that we have learned and used. For instance,<br>
+                                           m- for margin <br>
+                                           p- for padding <br>
+                                           mt- for margin-top <br>
+                                           ms- for margin-left <br>
+                                           mt-5 for size of 5 for margin-top <br>
+                                           m-auto for auto sizing of margin from 4 sides 
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/component.png" alt="Bootstrap component" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Boostrap components</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>A collection of pre-designed and pre-coded UI elements that web developers can use to quickly build responsive and consistent websites. For instance, <br>
+                                            Buttons, Forms, Lists <br>
+                                            Header, Footer, Navigation (Menu) bar <br>
+                                            Cards, Progress bar
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <a href="https://getbootstrap.com/" target="_blank"><div class="timeline-image">
+                                    <h4>
+                                        Explore
+                                        <br />
+                                        Bootstrap
+                                        <br />
+                                        more!
+                                    </h4>
+                                </div>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+            <section id="team" class="container mt-5">
+                <h1 class="display-7 bg-primary text-white text-center ">Team formation</h1>
+                <div class="container py-5">
+                    <div class="p-5 mb-4 bg-body-tertiary rounded-3"> <!-- To have more background color, refer to https://getbootstrap.com/docs/5.3/utilities/background/-->
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Expectation</h1>
+                            <p class="col-md-12 fs-4">In week 1, I will let people to have the freedom to choose their own teams (must be in the same workshop slot with you) (Your Team, Your Choice). <br><br>
+                                Each team just needs to fill in their information in a group registration spreadsheet, which must have 4 members.<br><br>
+                                For the teams which don't have enough team members or for the people who are struggled to find a team then we put you in any random team(s) to make sure every group should have 4 members.<br><br>
+                                From Week 1 to Week 7, members in a team will work together to finish the group project.<br><br>
+                                Hopefully, this arrangement is the best of both worlds!
+                                </p>
+                            <a href="https://bit.ly/wpstudio_team" target="_blank"><button class="btn btn-primary btn-lg" type="button">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <h1>Small exercises</h1>
+                    <p>Each member, build one html page as the one here <a href="https://startbootstrap.com/previews/personal">https://startbootstrap.com/previews/personal</a></p>
+                    <p>Each team, build a one html page using this example <a href="https://getbootstrap.com/docs/5.3/examples/album/">https://getbootstrap.com/docs/5.3/examples/album/</a></p>
+                </div>
+            </section>
+
+            <footer id="simpleFooter" class="container"><!-- Simple footer -->
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-body-secondary"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://getbootstrap.com/" class="btn btn-lg btn-primary px-2 mx-2">Get Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://startbootstrap.com/" class="btn btn-lg btn-success px-2 mx-2">Free Bootstrap templates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://getbootstrap.com/docs/5.3/examples/" class="btn btn-lg btn-danger px-2 mx-2">Bootstrap examples</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">Tuan Tran, 2024</p>
+            </div>
+         <!-- bootstrap js is required to perform slide navigation-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
