@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS: Swap two variables (embedded script)</title>
+    </head>
+    <body>
+        <h1>Swapping 2 variables</h1>
+        <script>
+            x = 10;
+            y = 20;
+
+            console.log("Before swapped, x = " + x + ", y = " + y);
+            
+            // swap
+            temp = x;
+            x = y;
+            y = temp;
+            
+            console.log("After swapped, x= " + x + ", y = " + y);
+
+            // swap again by using a different algorithm
+            x = x + y;
+            y = x - y;  // y now is x
+            x = x - y;  // x now is y
+
+            console.log(`After swapped again, x= ${x}, y = ${y}`); // ` is named accent grave
+        </script>
+    </body>
+</html>

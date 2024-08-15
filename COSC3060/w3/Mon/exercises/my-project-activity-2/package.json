@@ -1,0 +1,16 @@
+{
+  "name": "name-age-in-colors",
+  "version": "1.0.0",
+  "description": "Receive inputted names and ages and print them to screen in colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js John 25"
+  },
+  "keywords": [
+    "string",
+    "print",
+    "color"
+  ],
+  "author": "Tuan Tran",
+  "license": "ISC"
+}

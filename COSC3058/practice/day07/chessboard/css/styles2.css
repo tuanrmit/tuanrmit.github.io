@@ -1,0 +1,29 @@
+/* YOUR STYLE GOES IN HERE */
+:root {
+    --color-1: #EEEFD3;
+    --color-2: #769657;
+    --square-hover-color: yellow;
+}
+
+#board > .row:nth-child(odd) >.square:nth-child(odd) {
+    background-color: var(--color-1);
+} 
+#board > .row:nth-child(odd) >.square:nth-child(even) {
+    background-color: var(--color-2);
+}
+#board > .row:nth-child(even) >.square:nth-child(odd) {
+    background-color: var(--color-2);
+}
+#board > .row:nth-child(even) >.square:nth-child(even) {
+    background-color: var(--color-1);
+}
+.square:hover {
+    cursor: pointer;
+    border: 3px solid var(--square-hover-color);
+    transform: scale(1.3);
+    
+}
+
+.animation {
+    transition: 0.2s;
+}

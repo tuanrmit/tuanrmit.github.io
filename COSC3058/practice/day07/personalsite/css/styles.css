@@ -16,7 +16,7 @@ html, body {
     margin: 0 auto;   
 }
 header, footer {
-    font-family: "Raleway", sans-serif;
+    font-family: var(--title-font);
     font-size: 12pt;
     display: flex;
     width: 100%;
@@ -30,6 +30,9 @@ header, footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top:0;
+    z-index: 999;
  }
  header > nav {
     margin-right: 20px;
@@ -62,7 +65,7 @@ header > img {
 }
 .introduction > .intro-text {
     position: absolute;
-    top: 30px;
+    top: 100px;
     text-align: center;
 }
 .introduction > img {

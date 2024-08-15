@@ -1,0 +1,20 @@
+{
+  "name": "newnodejsproject",
+  "version": "1.0.0",
+  "description": "My first project in order to get to know node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "Node",
+    "Packages",
+    "Web",
+    "app"
+  ],
+  "author": "Tuan Tran",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}

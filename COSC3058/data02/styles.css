@@ -1,0 +1,26 @@
+body {
+    width: 70%;
+    margin: 4px auto;
+}
+ul li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 8px auto;
+}
+
+.name {
+    font-weight: bold;
+}
+.name::before {
+    content: "Course: "
+}
+.year::before {
+    content: "This course is studied at year: ";
+}
+li:nth-child(odd) {
+    background-color: rgba(0, 255,0, 0.5);
+}
+li:nth-child(even) {
+    background-color: rgba(0,0,255, 0.5);
+}

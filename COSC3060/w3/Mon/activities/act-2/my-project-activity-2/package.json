@@ -1,0 +1,19 @@
+{
+  "name": "name-and-age",
+  "version": "1.0.0",
+  "description": "Printing out name and age in colours",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js John 25"
+  },
+  "keywords": [
+    "print",
+    "string",
+    "colors"
+  ],
+  "author": "Tuan Tran",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}

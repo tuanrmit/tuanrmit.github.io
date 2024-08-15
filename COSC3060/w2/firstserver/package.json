@@ -1,0 +1,16 @@
+{
+  "name": "firstserver",
+  "version": "1.0.0",
+  "description": "My first Nodejs Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "simple",
+    "server",
+    "nodejs"
+  ],
+  "author": "Tuan",
+  "license": "ISC"
+}

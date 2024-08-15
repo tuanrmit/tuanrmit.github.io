@@ -1,0 +1,176 @@
+<!--
+    Bootstrap component used:
+    Accordion
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 1 - Day 2 - COSC3060</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="mystyles.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <div class="container-fluid p-0">
+            <!-- Header and navigation bar -->
+            <nav class="navbar navbar-expand-lg bg-navbar-mycolor sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">COSC3060 - Web Programming Studio</a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">Sandwich button -->
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                    <!-- </button> -->
+                    <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link" href="#">Features</a>
+                          <a class="nav-link" href="#">Pricing</a>
+                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </div>
+                    </div> -->
+                </div>
+            </nav>
+            
+            <!-- Sidebar -->
+            <!-- <aside class="sidebar">
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+
+            </aside> -->
+            <!-- Main -->
+            <main class="container mt-3">
+            <h1 class="display-6">Bootstrap Review</h1>
+            <hr>
+            <p>Bootstrap is CSS and JS framework helpful for designing responsive website.</p>
+            <p>Bootstrap makes classes with semantic names out of CSS basic properties.</p>
+            <p>To decorate an html element, we add bootstrap classes to it.</p>
+            <h2>Layout</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item"> <!-- Breakpoints -->
+                  <h2 class="accordion-header"> 
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Breakpoint
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Breakpoints address the responsiveness of a webpage. A breakpoint represents width of a device.<br>  
+                        A breakpoint is a screensize point below which an html element is of <span class="btn btn-sm btn-primary">100% of width</span> and above which the html element's <span class="btn btn-sm btn-primary" >max-width</span> is applied.<br>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Extra small<span class="fw-normal"><br>&lt;576px<br>...</span></th>
+                                    <th>Small<span class="fw-normal"><br>&ge;576px<br>Smartphones</span></th>
+                                    <th>Medium<span class="fw-normal"><br>&ge;768px<br>Tablets</span></th>
+                                    <th>Large<span class="fw-normal"><br>&ge;992px<br>Laptops</span></th>
+                                    <th>X-Large<span class="fw-normal"><br>&ge;1200px<br>2K diplays</span></th>
+                                    <th>XX-Large<span class="fw-normal"><br>&ge;1400px<br>4K displays</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><code>.container</code></th><td class="text-danger fw-bold">100%</td><td>540px</td><td>720px</td><td>960px</td><td>1140px</td><td>1320px</td>
+                                </tr>
+                                <tr>
+                                    <th><code>.container-sm</code></th><td class="text-danger fw-bold">100%</td><td>540px</td><td>720px</td><td>960px</td><td>1140px</td><td>1320px</td>
+                                </tr>
+                                <tr>
+                                    <th><code>.container-md</code></th><td>100%</td><td class="text-danger fw-bold">100%</td><td>720px</td><td>960px</td><td>1140px</td><td>1320px</td>
+                                </tr>
+                                <tr>
+                                    <th><code>.container-lg</code></th><td>100%</td><td>100%</td><td class="text-danger fw-bold">100%</td><td>960px</td><td>1140px</td><td>1320px</td>
+                                </tr>    
+                                <tr>
+                                    <th><code>.container-xl</code></th><td>100%</td><td>100%</td><td>100%</td><td class="text-danger fw-bold">100%</td><td>1140px</td><td>1320px</td>
+                                </tr> 
+                                <tr>
+                                    <th><code>.container-xxl</code></th><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td class="text-danger fw-bold">100%</td><td>1320px</td>
+                                </tr> 
+                                <tr>
+                                    <th><code>.container-fluid</code></th><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td class="text-danger fw-bold">100%</td>
+                                </tr> 
+                                
+                            </tbody>
+                        </table>
+                        Breakpoints are written as a <span class="btn btn-sm btn-danger">class infix</span> (part of a class name) we want to be reponsive to different screen size. For instance, <code>.container-{breakpoint}</code>, <code>.col-{breakpoint}</code>, <code>m-{breakpoint}-{size}</code>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"> <!-- Grid -->
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Grid system
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Grid system is a 12 equal-sized columns on which a web page is designed. 
+                        <div class="row text-center"><!-- Demonstrate grid system-->
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                            <div class="col-sm-1  py-3 border border-primary">col-sm-1</div>
+                        </div> 
+                        <hr>
+                        With this grid system, we can make various layouts for a web page by using <code>.row</code> and combination of <code>.col-{breakpoint}-{number of columns}</code> .
+                        <div class="container">
+                            <div class="row text-center text-color-white">
+                                <div class="col-12 py-2 text-bg-primary" >Header and Menu bar (.col-12)</div>
+                            </div>
+                            <div class="row text-center my-2">
+                                <div class="col-12 py-5 text-bg-success">Main Content (col-12)</div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-12 py-2 text-bg-secondary">Footer and Contact (col-12)</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-sm-4 py-5 my-1 text-bg-primary">Fixed Sidebar</div>
+                                <div class="col-sm-8 py-5 my-1 text-bg-warning">Main content</div>
+                            </div>
+                            <div class="row text-center mt-1">
+                                <div class="col-sm-12 py-2 text-bg-secondary">Footer and Contact</div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"> <!-- Spacing-->
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Spacing
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Spacing is about margins around an element and padding inside an element. It is used to align and arrange element.<br>
+                      Classes to adjust margin <code>m-0, m-5, ms-2, me-4, mx-2, my-4, mx-auto</code>.<br>
+                      Classes to addjust padding <code>p-0, p-2, ps-2, pe-4, px-2, py-4</code>.<br>
+                      FYI, spacing 1 ~ 0.25 * 16px; 2 ~ 0.5 * 16px; 3 ~ 16px; 4 ~ 1.5 * 16px; 5 ~ 3 * 16px  but it is not important.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main> 
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

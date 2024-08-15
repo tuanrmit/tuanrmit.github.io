@@ -1,0 +1,23 @@
+/* YOUR STYLE GOES IN HERE */
+:root {
+    --color-1: #EEEFD3;
+    --color-2: #769657
+}
+#board > .square:nth-child(odd) {
+    background-color: var(--color-1) ;
+}
+#board > .square:nth-child(even) {
+    background-color: var(--color-2) ;
+}
+#board > .row:nth-child(odd) >.square:nth-child(odd) {
+    background-color: var(--color-1);
+} 
+#board > .row:nth-child(odd) >.square:nth-child(even) {
+    background-color: var(--color-2);
+}
+#board > .row:nth-child(even) >.square:nth-child(odd) {
+    background-color: var(--color-2);
+}
+#board > .row:nth-child(even) >.square:nth-child(even) {
+    background-color: var(--color-1);
+}

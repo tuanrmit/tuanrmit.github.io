@@ -1,0 +1,113 @@
+* {
+    margin: 0 auto;
+}
+html, body {
+    width: 80%;
+    margin: 20px auto;
+}
+:root {
+    --primary-color: #536493;
+    --secondary-color: #D0B8A8;
+    --border-color: #D0B8A8;
+    --section-width: 100%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+}
+header, main, footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--border-color);
+    padding: 20px 20px;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-areas: "album profile";
+}
+#album {
+    width: 100%;
+    grid-area: album;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    border: 1px solid var(--border-color);
+    padding: 10px 10px;
+}
+div.image {
+    width: 100%;
+}
+.s1, .s2, .s3 {
+    display: grid;
+    width: 100% !important;
+}
+.s1 {
+    grid-template-columns: auto;
+}
+.s2 {
+    grid-template-columns: auto auto auto;
+}
+.s3 {
+    grid-template-columns: auto auto;
+}
+.s1 img, .s2 img, .s3 img {
+    width: 100% !important;
+}
+
+#profile {
+    grid-area: profile;
+}
+
+footer {
+    grid-area: footer;
+}
+#logo {
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+#profile > img {
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+#album h1, h2, h3, a {
+    color: var(--primary-color);
+}
+div.image > h2 {
+    
+    text-align: left;
+}
+div.image > a {
+    display: block;
+    text-align: right;
+}
+header h1 {
+    text-align: right !important;
+}
+@media screen and (max-width: 767px) {
+    * {
+        border: 0;
+    }
+    #gallery, header, main, #profile, section, #album, .s1, .s2, .s3 {
+        display: grid;
+        grid-template-columns: 100%;
+    
+        width: 100% !important;
+        border: 0;
+    }
+    main {
+        grid-template-areas: "profile" "album";
+    }
+
+    
+}

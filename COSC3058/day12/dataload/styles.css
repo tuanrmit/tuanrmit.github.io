@@ -1,0 +1,36 @@
+:root {
+    --color-1: rgba(232, 147, 11, 0.5);
+    --color-2: rgba(161, 138, 121, 0.5);
+}
+body {
+  width: 70%;
+  margin: 6px auto;
+}
+body h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px auto;
+    padding: 4px 20px;
+    
+}
+ul li:nth-child(odd) {
+    background-color: var(--color-1);
+}
+ul li:nth-child(even) {
+    background-color: var(--color-2);
+}
+ul li > p.name::before {
+    content: "Course name: ";
+}
+ul li > p.year::before {
+    content: "Year: ";
+}
+ul li > p.description::before {
+    content: "Desription: ";
+}

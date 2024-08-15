@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    color: #303030;
+    background-color: #fafafa;
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: indigo;
+    font-family: "Georgia", "Times", serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: darkcyan;
+    text-decoration: none;
+  }
+  
+  /** START WRITING YOUR CSS CODR FOR PAGE LAYOUT BELOW THIS COMMENT **/ 
+  nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 6px;
+    border-bottom: 1px solid lightgray;
+  }
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  header {
+
+  }
+  main {
+
+  }
+  main > section:nth-child(even){
+    background-color: aqua;
+  }
+  footer {
+    background-color: #4C0082 ;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }

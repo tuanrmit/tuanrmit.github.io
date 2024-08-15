@@ -1,0 +1,25 @@
+/* DO NOT TOUCH THIS FILE!!!  */
+.square {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.chess-symbol {
+    font-size: 60pt;
+}
+
+/* DO NOT TOUCH THIS FILE!!!  */
+/* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+#board {
+    display: flex;
+    margin: 100px auto;
+    width: 800px;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}

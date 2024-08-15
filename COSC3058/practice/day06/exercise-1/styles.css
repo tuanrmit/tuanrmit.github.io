@@ -1,0 +1,7 @@
+/* YOUR STYLE GOES IN HERE */
+#board > .square:nth-child(odd) {
+    background-color:#EEEFD3 ;
+}
+#board > .square:nth-child(even) {
+    background-color: #769657 ;
+}

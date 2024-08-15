@@ -1,0 +1,137 @@
+/*
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024A
+Assessment: Fundamental Programming Challenge
+Author: Your names (e.g. Nguyen Van Minh)
+ID: Your student ids (e.g. s1234567)
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+/* ------------------------- */
+/* YOUR CSS WORK STARTS HERE */
+/* ------------------------- */
+:root {
+    --primary-color: #536493;
+    --secondary-color: #D0B8A8;
+    --border-color: #D0B8A8;
+    --section-width: 100%;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    margin: auto auto;
+}
+#gallery {
+    width: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    margin: 0 auto;
+} 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border: 1px solid grey;
+}
+header, #album, #profile {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#album, #profile {
+    border: 1px solid grey;
+}
+#album {
+    width: 75%;
+}
+#profile {
+    flex: 1;
+}
+
+header h1 {
+    text-align: right !important;
+}
+#profile > img {
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+#logo {
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+#album h1, h2, h3, a {
+    color: var(--primary-color);
+}
+div.image {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid var(--border-color);
+    padding: 10px 6px;
+}
+div.image > h2 {
+    text-align: left;
+}
+div.image > a {
+    text-align: right;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: flow;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+section.s1 > div.image {
+    width: 100%;
+    aspect-ratio: unset;
+}
+section.s2 > div.image {
+    width: calc(var(--section-width)/3 - 3px);
+    aspect-ratio: unset;
+}
+section.s3 > div.image {
+    width: calc(var(--section-width)/2 - 3px);
+    aspect-ratio: unset;
+}
+@media only screen and (max-width: 767px) {
+    * {
+        border: 0;
+    }
+    #gallery, header, main, section, #album, .s1, .s2, .s3, #profile {
+        width: 100% !important;
+        border: 0;
+    }
+    main {
+        flex-direction: column;
+    }
+    section.s1 > div.image, section.s2 > div.image, section.s3 > div.image {
+        width: 100%;
+        aspect-ratio: unset;
+        border: 0;
+    }
+    #album img {
+        width: 100%;
+        height: 200px !important;
+        border: 0;   
+    }
+    header {
+        position: relative;
+        border: 0;
+    }
+} 
+   
+
+
+
+
+

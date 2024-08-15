@@ -1,0 +1,35 @@
+body {
+    margin: 0; /* Notes: https://meyerweb.com/eric/tools/css/reset/,  */
+}
+.box {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    color:white;
+    align-items: center;
+    justify-content: center   
+    /* position: absolute; // alternatives */
+}
+.box.red {
+    background-color: red;  /* challenge 1 */
+    /* top-left: 0  // alternatives */
+
+}
+.box.yellow {
+    background-color: yellow; /* challenge 1*/
+    /* margin-left: 100px; /* challenge 2 */
+    /* position: relative;   /* challenge 3 */
+    /* left: 100px; */
+    position: absolute; /* challenge 4 */
+    left: 100px;
+}
+.box.blue {
+    background-color: blue; /* challenge 1*/
+    /* margin-left: 200px; /* challenge 2 */
+    /* position: relative;    /* challenge 3 */
+    /* left:200px; */
+    position: absolute; /* challenge 4 */
+    top: 200px;
+    left: 200px;
+}
+

@@ -1,0 +1,41 @@
+/* Enter your CSS solution here! */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header, footer {
+    width: 100%;
+    height: 10%;    
+}
+header {
+    background-color: #80CBC5;
+}
+
+footer {
+    background-color: #27A69B;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+}
+nav, article, aside {
+    height: 100%;
+}
+main > nav {
+    background-color: #FFAB02;
+    width: 20%;
+
+}
+main > article {
+    background-color: #FFD64F;
+    width: 70%;
+}
+main > aside {
+    background-color: #FFF276;
+    width: 10%;
+}
+
