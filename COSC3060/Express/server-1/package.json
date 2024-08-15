@@ -1,0 +1,23 @@
+{
+  "name": "server-1",
+  "version": "1.0.0",
+  "description": "Web server with Express Framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "Express",
+    "framework"
+  ],
+  "author": "Tuan Tran",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
